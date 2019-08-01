@@ -1,9 +1,6 @@
 import java.util.ArrayList;
-import java.util.Scanner;
 
 public class Main {
-	// creating object of scanner class
-	static Scanner input = new Scanner(System.in);
 
 	public static void main(String[] args) {
 
@@ -34,7 +31,7 @@ public class Main {
 		// creating empty array list for a customer with no bills
 		ArrayList<Bill> B4 = new ArrayList<Bill>();
 
-		// creating three customers
+		// creating four customers
 		Customer C1 = new Customer(13, "Zina", "Tenser", "TenserZina@gamil.com", 414.5, B1);
 		Customer C2 = new Customer(12, "Neema", "Viewr", "Neema@yahoo.com", 585.5, B2);
 		Customer C3 = new Customer(11, "Helen", "Olsu", "OlsuHelen7@hotmail.com", 414.5, B3);
@@ -52,7 +49,7 @@ public class Main {
 		// calling the finding customer function from customer id
 		C1.getCustomerById(customers);
 
-		// calling fucntion to display the whole data of customers
+		// calling function to display the whole data of customers
 		C1.Display(customers);
 
 	}
