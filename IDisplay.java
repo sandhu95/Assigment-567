@@ -1,8 +1,5 @@
 
 public interface IDisplay {
-
-	public static void Display()
-	{
-		
-	}
+//declaring method in the interface
+	public void Display(Customer[] C);
 }
