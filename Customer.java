@@ -177,8 +177,8 @@ public class Customer implements IDisplay {
 		}
 
 	}
-	
-	//function defination to sort the customers in the customer list
+
+	// function defination to sort the customers in the customer list
 	public Customer[] sortCustomers(Customer[] unsortedCustomerList) {
 		int tempId = 0;
 		for (int j = 0; j < unsortedCustomerList.length; j++) {
@@ -194,7 +194,7 @@ public class Customer implements IDisplay {
 		return unsortedCustomerList;
 	}
 
-	//function to sort bills of a particular customer in the bills ArrayList
+	// function to sort bills of a particular customer in the bills ArrayList
 	public ArrayList<Bill> sortBills(ArrayList<Bill> List) {
 		for (int j = 0; j < List.size(); j++) {
 			int tempBillId = 0;
