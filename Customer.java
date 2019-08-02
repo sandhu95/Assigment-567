@@ -197,12 +197,12 @@ public class Customer implements IDisplay {
 	// function to sort bills of a particular customer in the bills ArrayList
 	public ArrayList<Bill> sortBills(ArrayList<Bill> List) {
 		for (int j = 0; j < List.size(); j++) {
-			int tempBillId = 0;
+			double tempBillAmount = 0;
 			for (int i = 0; i < List.size() - 1; i++) {
-				if (List.get(i + 1).getBillId() < List.get(i).getBillId()) {
-					tempBillId = List.get(i).getBillId();
-					List.get(i).setBillId(List.get(i + 1).getBillId());
-					List.get(i + 1).setBillId(tempBillId);
+				if (List.get(i + 1).getTotalBillAmount() < List.get(i).getTotalBillAmount()) {
+					tempBillAmount = List.get(i).getTotalBillAmount();
+					List.get(i).setTotalBillAmount(List.get(i + 1).getTotalBillAmount());
+					List.get(i + 1).setTotalBillAmount(tempBillAmount);
 				}
 			}
 		}
